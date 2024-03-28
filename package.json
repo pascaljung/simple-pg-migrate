@@ -1,0 +1,24 @@
+{
+  "name": "simple-pg-migrate",
+  "version": "1.0.0",
+  "description": "Simple migration tooling for postgres databases",
+  "bin": {
+    "simple-pg-migrate": "bin/cli.js",
+    "spg-migrate": "bin/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "postgres",
+    "migration"
+  ],
+  "author": "Pascal Jung",
+  "license": "MIT",
+  "dependencies": {
+    "date-fns": "^3.6.0",
+    "dockerode": "^4.0.2",
+    "postgres": "^3.4.4"
+  },
+  "type": "module"
+}
