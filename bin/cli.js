@@ -70,7 +70,7 @@ function createMigrationFile() {
 }
 
 async function diff() {
-  const initialMigrationPath = process.env.argv[3];
+  const initialMigrationPath = process.argv[3];
 
   const docker = new Docker();
 
