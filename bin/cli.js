@@ -65,6 +65,10 @@ function createMigrationFile() {
     throw new Error('Please provide a new for the migration');
   }
 
+  if (!fs.existsSync(MIGRATION_DIRECTORY)) {
+    fs.mkdirSync(MIGRATION_DIRECTORY);
+  }
+
   let date = format(new Date(), 'yyyyMMddHHmmss');
   fs.writeFileSync(`${MIGRATION_DIRECTORY}/${date}_${name}.sql`, '');
 }
