@@ -62,7 +62,7 @@ function createMigrationFile() {
   let name = process.argv[3];
 
   if (name == null) {
-    throw new Error('Please provide a new for the migration');
+    throw new Error('Please provide a name for the migration');
   }
 
   if (!fs.existsSync(MIGRATION_DIRECTORY)) {
