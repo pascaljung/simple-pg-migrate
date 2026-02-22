@@ -15,6 +15,7 @@
   ],
   "author": "Pascal Jung",
   "license": "MIT",
+  "repository": "https://github.com/pascaljung/simple-pg-migrate",
   "dependencies": {
     "date-fns": "^4.1.0",
     "dockerode": "^4.0.2",
